@@ -1,1 +1,6 @@
-
+build project:
+  script:
+    - ./mvnw clean package -DskipTests
+  artifacts:
+    path:
+      - target/*.jar
